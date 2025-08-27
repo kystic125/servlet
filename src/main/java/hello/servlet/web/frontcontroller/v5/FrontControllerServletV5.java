@@ -74,7 +74,6 @@ public class FrontControllerServletV5 extends HttpServlet {
     }
 
     private MyHandlerAdapter getHandlerAdapter(Object handler) {
-        MyHandlerAdapter a;
         for (MyHandlerAdapter adapter : handlerAdapters) {
             if (adapter.support(handler)) {
                 return adapter;
